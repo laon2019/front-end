@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="input.jsp" method="post">
+        <fieldset>
+            <legend>인적 사항 입력</legend>
+        이름 : <input type="text" name="name" autofocus required><br>
+        학번 : <input type="text" name="number" size="10" placeholder="2210-10583"><br>
+        패스워드 : <input type="password" name="password"><br>
+        성별 : 
+        <input type="radio" name="gender" value="male">남성
+        <input type="radio" name="gender" value="female">여성
+        </fieldset>
+        <br>
+        <fieldset>
+        과일 선택 :
+        <input type="checkbox" name="fruits" value="apple"checked>Apple
+        <input type="checkbox" name="fruits" value="Grape">Grape
+        <input type="checkbox" name="fruits" value="Orange">Orange
+        <br>
+        차 선택 : 
+        <select name="cars">
+            <option value="bmw">BMW</option>
+            <option value="Benz">Benz</option>
+            <option value="Hyundai">현대</option>
+            <option value="Kia">KIA</option>
+        </select>
+        <br>
+        
+        이메일 : <input type="email" name="email" readonly><br>
+        URL :   <input type="url" name="url"><br>
+        전화번호 : <input type="tel" name="tel">
+       
+        색상 :  <input type="color" name="color"><br>
+        월 :    <input type="month" name="month"><br>
+        날짜 :  <input type="date" name="date"><br>
+        주 :    <input type="week" name="week"><br>
+        시간 :  <input type="time" name="time"><br>
+
+        지경 시간 : <input type="datetime-local" name="localdatetime"><br>
+        숫자 :  <input type="number" name="number" min="1" max="10" step="2"><br>
+        범위 :  <input type="range" name="range" min="1" max="11" step="2"><br>
+        <label>10초남음</label>
+        <progress value="50" max="60"></progress>
+        <label>진행율 30%</label>
+        <progress value="30" max="100"></progress>
+        <br>
+        <label>트래픽 초과</label>
+        <meter min="1024" max="10240" low="2048" high="8192" value="2500"></meter><br>
+        파일 : <input type="file" name="file"><br>
+        검색 : <input type="search" name="search">
+        </fieldset>
+        고객의 의견<br>
+        <textarea name="feedback" id="" cols="50" rows="5"></textarea><br>
+        <input type="button" value="계산" onclick="alert('10000원입니다.')">
+        <input type="submit" value="제출">
+        <br>
+        <button type="submit"><img src="../../이미지/submit_btn.png" width="30" height="30"></button>
+        <input type="image" src="../../이미지/click-here-button.jpg" width="30" height="30">
+    </form>
+    <button type="button" value="계산" onclick="alert('안녕하세요')">눌러보세요</button>
+</body>
+</html>
