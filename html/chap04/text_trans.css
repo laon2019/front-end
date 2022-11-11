@@ -1,0 +1,12 @@
+.upper{
+    text-transform: uppercase;
+}
+.lower{
+    text-transform: lowercase;
+}
+.capit{
+    text-transform: capitalize;
+}
+h1{
+    text-shadow: 5px 5px 5px red;
+}

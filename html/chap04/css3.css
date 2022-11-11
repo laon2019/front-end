@@ -1,0 +1,13 @@
+p{
+    background-color: rgb(180, 178, 178);
+    border: 2px solid rgb(68, 226, 213);
+}
+#normal{
+    color: rgba(129, 87, 9, 0.986);
+}
+.target{
+    text-align: center;
+}
+h1, p{
+    font-family: serif;
+}

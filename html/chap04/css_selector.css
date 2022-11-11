@@ -1,0 +1,37 @@
+#special{
+    background-color: bisque;
+    color: red;
+}
+.type1{
+    text-align: center;
+}
+p.type1{
+    text-align: center;
+}
+body em{
+    color: red;
+}
+body > h1{
+    color: aqua;
+}
+h2 + h3{
+    color: chartreuse;
+}
+h3 ~ h4{
+    color:blueviolet;
+}
+a:link{
+    color: black;
+}
+a:visited{
+    color: brown;
+}
+a:hover{
+    color: aquamarine;
+}
+p[title]{
+    color: blueviolet;
+}
+h1[class ="type1"]{
+    color: rgb(12, 236, 68);
+}
