@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+        
+        }
+        header{
+            background-color: blueviolet;
+            width: 100%;
+            height: 50px;
+            text-align: center;
+            padding: 5px;
+            
+        }
+        .Links{
+            display: table-cell;
+            background-color: darkorange;
+            width: 30%;
+            padding: 15px;
+        }
+        .content{
+            display: table-cell;
+            background-color: yellow;
+            width: 70%;
+            padding: 15px;
+            font-size: large;
+            
+        }
+        footer{
+            background-color: brown;
+            width: 100%;
+            height: 40px;
+            clear: both;
+            text-align: center;
+            color: white;
+            padding-top: 15px;
+            font-size: 90%;
+        }
+        h1{
+            margin: 0;
+        }
+        ul{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+            
+        }
+       
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Blog Page</h1>
+    </header>
+    <div class="a">
+        <div class="Links">
+            <h3>Links</h3>
+            <ul id="list">
+                <li><a href="">W3C</a></li>
+                <li><a href="">MOZILLA</a></li>
+                <li><a href="">HTML Dogs</a></li>
+            </ul>
+            <figure>
+                <img src="/img/lion.png" alt="" width="50" height="50">
+                <figcaption>홍길동</figcaption>
+            </figure>
+        </div>
+        <div class="content">
+            <article>
+                <h4>Semantic Tags</h4>
+                <p id="lists">시멘틱 요소(Semantic elements)들은 브라우저에게 요소의 의미나 목적을 명확하게 알려주는요소이다.</p>
+            </article>
+            <article>
+                <h4>div와 span</h4>
+                <p id="lists">div은 "divide"의 약자로서 페이지를 논리적인 섹션으로 분리하는데 사용되는 태그이다.span요소는 인라인 요소로서 텍스트를 위한 컨테이너로 사용할 수 있다.</p>
+            </article>
+        </div>
+        <footer>
+            Copyright (c) 2013 Hong
+        </footer>
+    </div>
+</body>
+</html>

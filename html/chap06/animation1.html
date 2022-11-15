@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation1</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+            animation: 2s myanim;
+            animation-iteration-count: 10;
+        }
+        @keyframes myanim{
+            0%{left: 0px; top: 0px;}
+            25%{background-color: palevioletred; left: 100px; top: 0px;}
+            50%{left: 200px; top: 1000px;}
+            75%{left: 100px; top: 0px;}
+            100%{left: 0px; top: 0px;}
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

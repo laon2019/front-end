@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #one, #three, #two{
+            width: 200px;
+            height: 80px;
+        }
+        #one{
+            background-color: aqua;
+        }
+        #container{
+            position: relative;
+            background-color: gray;
+            width: 600px;
+            height: 120px;
+        }
+        #two{
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            background-color: blueviolet;
+
+        }
+        #three{
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <p id="one">block #1</p>
+    <div id="container">
+        container
+        <div id ="two">
+            block #2 <br>
+            position:static;
+        </div>
+    </div>
+    <p id="three">block#3</p>
+    
+</body>
+</html>
