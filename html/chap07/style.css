@@ -1,0 +1,203 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/*헤더 */
+header{
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: xx-large;
+}
+/* navbar */
+.navbar ul{
+    list-style: none;
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding: 10px 0px;
+    
+}
+.navbar ul li{
+    display: inline;
+    text-transform: uppercase;
+    padding:0px 10px;
+    letter-spacing: 10px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: black;
+}
+.navbar a:hover{
+    color: lightslategray;
+    font-weight: bolder;
+}
+/* 로그인*/
+.login{
+    padding: 10px 15px 10px 0px;
+    text-align: right;
+    font-size: smaller;
+    text-transform: uppercase;
+}
+.login a:hover{
+    color: lightslategray;
+    font-weight: bolder;
+}
+/* 카테고리 디자인*/
+#left{
+    float: left;
+    width: 30%;
+    height: 600px;
+    
+}
+#left h3{
+    text-align: center;
+    font-size: x-large;
+    padding: 10px 0;
+}
+#left ul{
+    padding: 0px 40px;
+}
+#left ul li{
+    color: white;
+    text-align: center;
+    padding: 14px 0px;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-radius: 5px;
+}
+#left ul li a:hover{
+    color: lightgray;
+    font-size: large;
+}
+.main_computer{
+    margin: 50px;
+}
+#computer{
+    border-top: 1px solid black;;
+}
+#product1{
+    float: left;
+    width: 48%;
+}
+#product2{
+    float: left;
+    width: 48%;
+}
+.frame1{
+    float: right;
+    width: 70%;
+    
+}
+/* 링크 */
+a{
+    text-decoration: none;
+    color: black;
+}
+.hello{
+    text-align: center;
+    padding-top: 100px;
+    font-size: 100px;
+    text-transform: uppercase;
+}
+
+
+/* 로그인 */
+.login_main {
+    display: flex;height: 50%;width: 50%; flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 3px solid lightgrey;
+    border-radius: 5px;
+    position: absolute; left: 50%; transform: translateX(-50%);
+}
+
+.logo {
+    font-size: 80px;
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
+
+#login {
+    width: 100%;
+    background-color: lightgray;
+    border-color: transparent;
+    color: white;
+}
+#login a:hover{
+    font-size: large;
+}
+.sign in{
+    width: 100%;
+    background-color: lightgray;
+    border-color: transparent;
+    color: white;
+}
+.find_pw{
+    margin-left: 6px;
+}
+.container a:hover{
+    text-decoration: underline;
+}
+
+.account {
+    display: block;
+    margin-bottom: 3px;
+    padding: 3px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 3px;
+}
+/* 회원가입 */
+#alert {
+    border-color: transparent;
+}
+label{
+    display: inline-block;
+    width: 120px;
+}
+input{
+    display: inline-block;
+    width: 160px;
+}
+#page-wrap{
+    padding: 20px;
+}
+
+/* 쇼핑카트 */
+.shoptable{
+    height: 1000px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+    position: absolute; left: 50%; transform: translateX(-50%);
+}
+
+.shoptable table th ,.shoptable table td,.shoptable table{
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+.shoptable table th, .shoptable table td{ 
+    padding: 5px;
+    min-width: 200px;
+}
+#button_1{
+    margin-top: 10px;
+    margin-left: 80%;
+}
+
+
+
+
+
+/* 하단 */
+footer{
+    background-color: lightgrey;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0px;
+    border-top: 1.5px solid black;
+}
