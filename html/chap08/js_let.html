@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let x = "outer x";
+        {
+            let x = "inner x";
+            let y = "inner y";
+            document.write("inner => "+x+", "+y+"<br>");
+        }
+        document.write("outer => "+x+"<br>");
+        //document.write("outer => "+y);
+
+        const c = 2;
+        document.write(c+"<br>");
+
+        const origin = {x:1, y:2};
+        origin.x=3;
+        document.write(origin.x, origin.y);
+        document.write("<br>");
+        let txt="";
+        for(let x in origin){
+            txt += origin[x]+" ";
+        }
+        document.write(txt);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
