@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="remaining"></div>
+    <script>
+        function dateUntilNewUYear(){
+            const now = new Date();
+            const newYear = new Date('January 1, '+(now.getFullYear()+1));
+            let diff = newYear - now;
+            diff = diff / 1000;
+            const seconds = Math.floor(diff % 60);
+            diff = diff / 60;
+            const minutes = Math.floor(diff % 60);
+            diff = diff / 60;
+            const hours = Math.floor(diff % 24);
+            diff = diff / 24;
+            const days = Math.floor(diff);
+    
+            const outStr = "내년도 신정까지 "+ days+ "일, "+hours+ "시간, "+minutes+"분, " +seconds+"초"+" 남았습니다.";
+            document.getElementById("remaining").innerHTML = outStr;
+            //1초가 지나면 다시 함수를 호출한다.
+            setTimeout("datesUntilNewYear()", 1000);
+        }
+        dateUntilNewUYear();
+    </script>
+</body>
+</html>

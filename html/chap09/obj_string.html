@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    아이디: <input type="text" id="id" size="10">
+    <button onclick="checkID()">검사</button>
+    <p>문자열 검색 : <span id="indexOf"></span></p>
+    <p>문자열 매칭 : <span id="match"></span></p>
+    <p>문자열 변환 : <span id="replace"></span></p>
+    <p>문자열 변환 : <span id="split"></span></p>
+
+    <script>
+        function checkID(){
+            var s = document.getElementById("id").value;
+            if(s.length < 6){
+                alert("아아디는 6글자 이상이어야 합니다.");
+            }
+        }
+        const s = "자바스크립트에 오신것을 환영합니다";
+        const n = s.indexOf("환영");
+        document.getElementById("indexOf").innerHTML = n;
+
+        let result = s.match("스크립트");
+        document.getElementById("match").innerHTML = result;
+
+        result = s.replace("자바", "타입");
+        document.getElementById("replace").innerHTML = result;
+        let txt = "";
+        const array = s.split(" ");
+        for(let i =0;i<array.length;i++){
+            txt += array[i]; 
+        }
+        document.getElementById("split").innerHTML = result;
+    </script>
+</body>
+</html>
