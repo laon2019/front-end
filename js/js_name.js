@@ -13,28 +13,26 @@ var team1 = Array(nums[0]);
 var team2 = Array(nums[1]);
 var team3 = Array(nums[2]);
 var team4 = Array(nums[3]);
-team1.fill("");
-team2.fill("");
-team3.fill("");
-team4.fill("");
+
+
 
 for(var i = 0; i<nums[0];i++){
     team1[i] = names[i];
 }
-var q = team1.length;
-var w = team1.length+team2.length;
-for(var i = q;i<w;i++){
-    team2[i-q] = names[i];
+var start = team1.length;
+var end = team1.length+team2.length;
+for(var i = start;i<end;i++){
+    team2[i-start] = names[i];
 }
-q = team1.length+team2.length;
-w = team1.length+team2.length+team3.length;
-for(var i = q;i<w;i++){
-    team3[i-q] = names[i];
+start = team1.length+team2.length;
+end = team1.length+team2.length+team3.length;
+for(var i = start;i<end;i++){
+    team3[i-start] = names[i];
 }
-q = team1.length+team2.length+team3.length;
-w = team1.length+team2.length+team3.length+team4.length;
-for(var i = q;i<w;i++){
-    team4[i-q] = names[i];
+start = team1.length+team2.length+team3.length;
+end = team1.length+team2.length+team3.length+team4.length;
+for(var i = start;i<end;i++){
+    team4[i-start] = names[i];
 }
 console.log(team1);
 console.log(team2);
