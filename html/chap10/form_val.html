@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>회원강입</h3>
+    <form action="#">
+        이름 : <input type="text" id="name" onblur="checkBlank"><br>
+        주소 : <input type="text" id="addr"><br>
+        생일 : <input type="date" id="birth"><br>
+        아이디 (6~8자): <input type="text" id="username"><br>
+        이메일 : <input type="email" id="email"><br>
+        휴대폰 : <input type="tel" id="phone"><br>
+        <input type="submit" onclick="checkForm()" value="확인">
+    </form>
+    <script>
+        function checkBlank(elem) {
+            if (elem.value.length < 2) {
+                alert("필드가 비어있네요!");
+                setTimout(function () {
+                    elem.focus()
+                }, 10);
+            }
+            return true;
+        }
+        function checkForm() {
+            const username = document.getElementById("username").value;
+            //console.log(username);
+            if (username.length == 0) {
+                document.getElementById("msg").innerHTML = "아이디가 비어있네요";
+                document.getElementById("username").focus();
+            }
+            else if (username.length >= 6 && username.length <= 8) {
+                document.getElementById("msg").innerHTML = "아이디는 6~8사이로";
+                console.log(username);
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="target" onload="onLoadDoc">
+    <a href="#" onclick="maxopen('https://www.google.com','resize=1,scrollbar=1,status=1');return false">전체화면보기</a>
+    <a href="#" onclick="replace()">이동하기</a>
+    <br>
+    영어단어 :<input type="text" id="name" onchange="sub()">
+    <form method="POST">
+        <input type="radio" name="r1" value="blue" onclick="changColor('lightblue')">파랑색
+        <input type="radio" name="r2" value="green" onclick="changColor('lightgreen')">초록색
+        <div style="background-color: yellow; width:200px" onmouseover="over(this)" onmouseout="out(this)" >마우스를 이 요소위에로 이동하세요</div>
+    </form>
+    <button onmousedown="down(this)" onmouseup="up(this)"></button>
+    <script>
+        function maxopen(url, winatt){
+            const maxwindow = window.open(url,"",);
+            maxwindow.moveTo(0,0);
+            maxwindow.resizeTo(screen.avaiWidth, screen.avaiHeight);
+        }
+        function replace(){
+            location.replace("https://www.google.com")
+        }
+        function changColor(){
+            document.getElementById("target").style.backgroundColor = c;
+        }
+        function onLoadDoc(){
+            alert("문서가 로드되었습니다.");
+            document.body.style.backgroundColor = "red";
+        }
+        function sub(){
+            const x = document.getElementById("name");
+            x.value = x.value.toLowerCase();
+        }
+        function over(elem){
+            elem.style.border = "3px solid black";
+        }
+        function out(elem) {
+            elem.style.border = "none";
+        }
+        function down(elem){
+            elem.style.color = "#f00";
+        }
+        function up(elem){
+            elem.style.color = "none";
+        }
+    </script>
+</body>
+</html>
