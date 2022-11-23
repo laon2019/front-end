@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#fadeIn").focus(function(){
+                $("#dog").fadeIn("slow");
+            });
+            $("#fadeOut").focus(function(){
+                $("#dog").fadeOut("slow");
+            });
+        })
+    </script>
+</head>
+<body>
+    <button id="fadeIn">fadeIn()</button>
+    <button id="fadeOut">fadeOut()</button>
+    <img src="/img/pome.png" alt="" id="dog" width="120" height="100" style="display:none; position:relative" >
+</body>
+</html>

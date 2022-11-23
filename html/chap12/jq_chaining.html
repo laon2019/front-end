@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script>
+        $(document).ready(function (){
+            $("button").click(function (){
+                $("#dog").show().fadeOut("slow").slideDown("slow");
+            });
+        });
+    </script>
+</head>
+<body>
+    <button>메소드 체이닝 시작</button>
+    <img src="/img/pome.png" alt="" id="dog" width="120" height="100" style="display: none;">
+</body>
+</html>
