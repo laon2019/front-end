@@ -15,6 +15,11 @@
         <div class="thumbnail"></div>
         <p></p>
     </div>
+    <div>
+        책 검색: 
+        <input type="text" id="text1">
+        <input type="button" value="검색">
+    </div>
     <script src="https://code.jquery.com/jquery-1.10.1.js"></script>
     <script>
         $.ajax({
@@ -35,6 +40,6 @@
             $(".thumbnail").append('<img src="'+msg.documents[1].thumbnail+'"/>');
         });
     </script>
-    
+
 </body>
 </html>
